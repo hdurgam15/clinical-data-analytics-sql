@@ -21,23 +21,23 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 
 | # | File | Question Answered |
 |---|------|--------------------|
-| 01 | `01_demographics.sql` | What does the patient population look like (age, gender, etc.)? |
-| 02 | `02_top_conditions.sql` | What are the most common diagnosed conditions? |
-| 03 | `03_medications.sql` | What medications are most frequently prescribed? |
-| 04 | `04_encounter_trends.sql` | How do encounter volumes trend over time? |
-| 05 | `05_condition_vs_utilization.sql` | Does hypertension correlate with more encounters or higher cost per visit? |
-| 06 | `06_readmission_patterns.sql` | What share of patients had a rapid revisit (proxy for readmission) within 30 days? |
+| 01 | [01_demographics.sql](01_demographics.sql) | What does the patient population look like (age, gender, etc.)? |
+| 02 | [02_top_conditions.sql](02_top_conditions.sql) | What are the most common diagnosed conditions? |
+| 03 | [03_medications.sql](03_medications.sql) | What medications are most frequently prescribed? |
+| 04 | [04_encounter_trends.sql](04_encounter_trends.sql) | How do encounter volumes trend over time? |
+| 05 | [05_condition_vs_utilization.sql](05_condition_vs_utilization.sql) | Does hypertension correlate with more encounters or higher cost per visit? |
+| 06 | [06_readmission_patterns.sql](06_readmission_patterns.sql) | What share of patients had a rapid revisit (proxy for readmission) within 30 days? |
 
 ## Results
 
 | # | Result File | Summary |
 |---|--------------|---------|
-| 01 | `results/01_demographics_results.csv` | Patient population breakdown by age/gender |
-| 02 | `results/02_top_conditions_results.csv` | Most frequently diagnosed conditions |
-| 03 | `results/03_medications_results.csv` | Most frequently prescribed medications |
-| 04 | `results/04_encounter_trends_results.csv` | Encounter volume over time |
-| 05 | `results/05_condition_vs_utilization_results.csv` | Hypertension vs. encounter frequency/cost |
-| 06 | `results/06_readmission_patterns_results.csv` | Rapid revisit rate (82.8% of patients) |
+| 01 | [results/01_demographics_results.csv](results/01_demographics_results.csv) | Patient population breakdown by age/gender |
+| 02 | [results/02_top_conditions_results.csv](results/02_top_conditions_results.csv) | Most frequently diagnosed conditions |
+| 03 | [results/03_medications_results.csv](results/03_medications_results.csv) | Most frequently prescribed medications |
+| 04 | [results/04_encounter_trends_results.csv](results/04_encounter_trends_results.csv) | Encounter volume over time |
+| 05 | [results/05_condition_vs_utilization_results.csv](results/05_condition_vs_utilization_results.csv) | Hypertension vs. encounter frequency/cost |
+| 06 | [results/06_readmission_patterns_results.csv](results/06_readmission_patterns_results.csv) | Rapid revisit rate (82.8% of patients) |
 
 ## Data Notes & Limitations
 - The `encounters`, `conditions`, and `medications` tables reference 944 unique patient IDs, while the `patients` table contains only 116 known patients. To keep findings verifiable, **all analysis is scoped to the 116 known patients** rather than the full, partially unverifiable ID set.
