@@ -28,6 +28,17 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 | 05 | `05_condition_vs_utilization.sql` | Does hypertension correlate with more encounters or higher cost per visit? |
 | 06 | `06_readmission_patterns.sql` | What share of patients had a rapid revisit (proxy for readmission) within 30 days? |
 
+## Results
+
+| # | Result File | Summary |
+|---|--------------|---------|
+| 01 | `results/01_demographics_results.csv` | Patient population breakdown by age/gender |
+| 02 | `results/02_top_conditions_results.csv` | Most frequently diagnosed conditions |
+| 03 | `results/03_medications_results.csv` | Most frequently prescribed medications |
+| 04 | `results/04_encounter_trends_results.csv` | Encounter volume over time |
+| 05 | `results/05_condition_vs_utilization_results.csv` | Hypertension vs. encounter frequency/cost |
+| 06 | `results/06_readmission_patterns_results.csv` | Rapid revisit rate (82.8% of patients) |
+
 ## Data Notes & Limitations
 - The `encounters`, `conditions`, and `medications` tables reference 944 unique patient IDs, while the `patients` table contains only 116 known patients. To keep findings verifiable, **all analysis is scoped to the 116 known patients** rather than the full, partially unverifiable ID set.
 - Synthea does not include formal admit/discharge flags, so Query 06 uses a 30-day revisit window as a proxy for readmission rather than a true readmission metric.
@@ -35,8 +46,7 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 ## How to Run
 1. Install MySQL and MySQL Workbench.
 2. Load the Synthea CSV export into a database named `synthea_clinical_db` (tables: `patients`, `encounters`, `conditions`, `medications`).
-3. Open any file above in MySQL Workbench and execute against `synthea_clinical_db`.
+3. Open any file in `queries/` in MySQL Workbench and execute against `synthea_clinical_db`.
 
 ## Author
-Haritha Durgam — [GitHub](https://github.com/hdurgam15) · 
-[LinkedIn](https://linkedin.com/in/dr-haritha-durgam-725213226)
+Haritha Durgam — [GitHub](https://github.com/hdurgam28) · [LinkedIn](https://linkedin.com/in/dr-haritha-durgam-725213226)
