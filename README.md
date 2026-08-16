@@ -32,12 +32,13 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 
 | # | Result File | Summary |
 |---|--------------|---------|
-| 01 | [results/01_demographics_results.csv](results/01_demographics_results.csv) | Patient population breakdown by age/gender |
-| 02 | [results/02_top_conditions_results.csv](results/02_top_conditions_results.csv) | Most frequently diagnosed conditions |
-| 03 | [results/03_medications_results.csv](results/03_medications_results.csv) | Most frequently prescribed medications |
-| 04 | [results/04_encounter_trends_results.csv](results/04_encounter_trends_results.csv) | Encounter volume over time |
-| 05 | [results/05_condition_vs_utilization_results.csv](results/05_condition_vs_utilization_results.csv) | Hypertension vs. encounter frequency/cost |
-| 06 | [results/06_readmission_patterns_results.csv](results/06_readmission_patterns_results.csv) | Rapid revisit rate (82.8% of patients) |
+| 01 | [01_demographics_age_group_results.csv](01_demographics_age_group_results.csv) | Patient population breakdown by age group |
+| 01 | [01_demographics_gender_results.csv](01_demographics_gender_results.csv) | Patient population breakdown by gender |
+| 02 | [02_top_conditions_results.csv](02_top_conditions_results.csv) | Most frequently diagnosed conditions |
+| 03 | [03_medications_results.csv](03_medications_results.csv) | Most frequently prescribed medications |
+| 04 | [04_encounter_results.csv](04_encounter_results.csv) | Encounter volume over time |
+| 05 | [05_condition_vs_utilization_results.csv](05_condition_vs_utilization_results.csv) | Hypertension vs. encounter frequency/cost |
+| 06 | [06_readmission_results_1.csv](06_readmission_results_1.csv) | Rapid revisit rate (82.8% of patients) |
 
 ## Data Notes & Limitations
 - The `encounters`, `conditions`, and `medications` tables reference 944 unique patient IDs, while the `patients` table contains only 116 known patients. To keep findings verifiable, **all analysis is scoped to the 116 known patients** rather than the full, partially unverifiable ID set.
@@ -49,4 +50,5 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 3. Open any file in `queries/` in MySQL Workbench and execute against `synthea_clinical_db`.
 
 ## Author
-Haritha Durgam — [GitHub](https://github.com/hdurgam28) · [LinkedIn](https://linkedin.com/in/dr-haritha-durgam-725213226)
+Haritha Durgam — [GitHub](https://github.com/hdurgam28) · 
+[LinkedIn](https://linkedin.com/in/dr-haritha-durgam-725213226)
