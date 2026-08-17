@@ -15,7 +15,7 @@ This project applies SQL to synthetic electronic health record (EHR) data to ans
 ## Key Insights
 - **Hypertension drives visit frequency, not visit cost.** Patients with hypertension averaged over 2x the encounters of patients without it (57.3 vs. 26.1 avg. encounters per patient), while average cost per encounter was nearly identical (~$128.75) across both groups.
 - **Rapid revisits are common in this population.** 96 of 116 patients (82.8%) had at least one repeat encounter within 30 days of a prior visit — a proxy signal for readmission-style utilization patterns.
-- *(Add 1-2 more findings here from queries 01-04 once finalized — e.g., top conditions by prevalence, most-prescribed medications, or encounter volume trends over time.)*
+
 
 ## Queries
 
